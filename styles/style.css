@@ -1,0 +1,191 @@
+@font-face {
+  font-family: meta;
+  src: url("../z.otf") format("opentype");
+}
+
+* {
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.frame {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/* TEXTO METANOIA Y LINKS */
+
+.absolute-contents-top {
+  position: fixed;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 2.75rem rgb(255, 255, 255));
+  z-index: 2;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.absolute-contents-bottom {
+  position: fixed;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 2.75rem rgb(255, 255, 255));
+  z-index: 2;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.letra {
+  font-size: 16vw;
+  font-family: meta;
+}
+
+.cometa {
+  position: fixed;
+  left: 1%;
+  top: 17%;
+  width: 200px;
+  filter: drop-shadow(0 0 2.75rem rgb(8, 252, 0));
+  animation: comeme 5s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes comeme {
+  100% {
+    top: 60%;
+  }
+}
+
+.pelota {
+  position: fixed;
+  left: 86%;
+  top: 26%;
+  width: 130px;
+  filter: drop-shadow(0 0 1.5rem rgb(252, 214, 0));
+  animation: spin 50s linear infinite;
+}
+
+.peluza {
+  position: fixed;
+  left: 82%;
+  top: 49%;
+  width: 252px;
+  filter: drop-shadow(0 0 2.75rem rgb(252, 0, 231));
+  animation: spin 50s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* OBRAS */
+
+.alfombra {
+  width: 95%;
+  display: block;
+  margin: 50px auto 0;
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+}
+
+.ab {
+  width: 30%;
+}
+
+.m-angel {
+  position: relative;
+  width: 20%;
+  z-index: 3;
+}
+
+.atar {
+  width: 50%;
+}
+
+.uu {
+  display: flex;
+  overflow-y: hidden;
+}
+
+.uu11 {
+  width: 33.3%;
+}
+
+.uu1 {
+  width: 25%;
+}
+.uu2 {
+  width: 16.7%;
+}
+.uu3 {
+  width: 12.5%;
+}
+.uu4 {
+  width: 10%;
+}
+.uu5 {
+  width: 8.33%;
+}
+.uu6 {
+  width: 7.4%;
+}
+
+.bow2 {
+  width: 50%;
+}
+
+.bordado {
+  width: 100%;
+}
+
+.bow {
+  transform: rotate(45deg);
+}
+
+.furby {
+  width: 70%;
+}
+
+.msex {
+  transform: scaleX(-1);
+}
+
+.payasito {
+  width: 100%;
+  background-color: rgb(156, 223, 126);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cursor {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+/* .background .water {
+  position: absolute;
+  background-image: url("obras/atardecernegro.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: url("#turbulence");
+} */
